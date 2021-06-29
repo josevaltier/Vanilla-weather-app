@@ -9,7 +9,7 @@ h2,
   font-family: "Permanent Marker", cursive;
 }
 h1 {
-  margin-top: -5px;
+  margin-top: 3px;
   font-size: 45px;
 }
 h2 {
@@ -27,7 +27,7 @@ li {
 small {
   font-size: small;
   position: relative;
-  top: 3px;
+  top: 8px;
 }
 .container {
   background-image: url("images/Frame.png");
@@ -35,21 +35,25 @@ small {
   background-repeat: no-repeat;
   max-width: 550px;
   margin-top: -5px;
-  padding: 161px;
+  padding: 130px;
 }
 
 .main-emoji {
-  font-size: 50px;
+  max-width: 120px;
   position: relative;
   top: -4px;
   left: 73px;
+  padding: 0;
+}
+.main-temp {
+  margin-top: 20px;
+  margin-left: 55px;
 }
 
 .main-temp strong {
   font-size: 50px;
   text-align: center;
   font-weight: lighter;
-  margin-left: 25px;
 }
 
 .min-max-temp,
@@ -57,6 +61,9 @@ small {
   padding: 10px;
 }
 
+.min-max-temp {
+  margin-top: -17px;
+}
 .min-max-temp:hover {
   background-color: rgba(236, 193, 33, 0.8);
   border-radius: 4px;
