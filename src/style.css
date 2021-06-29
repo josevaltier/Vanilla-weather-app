@@ -9,7 +9,7 @@ h2,
   font-family: "Permanent Marker", cursive;
 }
 h1 {
-  margin-top: -14px;
+  margin-top: -5px;
   font-size: 45px;
 }
 h2 {
@@ -24,6 +24,11 @@ li {
   list-style: none;
 }
 
+small {
+  font-size: small;
+  position: relative;
+  top: 3px;
+}
 .container {
   background-image: url("images/Frame.png");
   background-position: center;
@@ -57,9 +62,34 @@ li {
   top: -4px;
   left: 44px;
 }
+.wind:hover {
+  background-color: rgba(236, 193, 33, 0.8);
+  border-radius: 4px;
+}
+
+.humidity:hover {
+  background-color: rgba(236, 193, 33, 0.8);
+  border-radius: 4px;
+}
 
 .humidity {
   position: relative;
   top: -4px;
   left: 27px;
+  text-align: center;
+}
+
+.go-button,
+.locate-me-button {
+  border-radius: 200px;
+  border-color: #ecc121;
+}
+
+.locate-me-button {
+  margin-top: 10px;
+}
+
+.search-box {
+  border-radius: 40px;
+  border-color: #ecc121;
 }
