@@ -47,7 +47,7 @@ small {
 
 .main-temp strong {
   font-size: 50px;
-  text-align: right;
+  text-align: center;
   font-weight: lighter;
   margin-left: 25px;
 }
@@ -55,6 +55,11 @@ small {
 .min-max-temp,
 .extra-values {
   padding: 10px;
+}
+
+.min-max-temp:hover {
+  background-color: rgba(236, 193, 33, 0.8);
+  border-radius: 4px;
 }
 
 .wind {
@@ -67,11 +72,6 @@ small {
   border-radius: 4px;
 }
 
-.humidity:hover {
-  background-color: rgba(236, 193, 33, 0.8);
-  border-radius: 4px;
-}
-
 .humidity {
   position: relative;
   top: -4px;
@@ -79,6 +79,10 @@ small {
   text-align: center;
 }
 
+.humidity:hover {
+  background-color: rgba(236, 193, 33, 0.8);
+  border-radius: 4px;
+}
 .go-button,
 .locate-me-button {
   border-radius: 200px;
@@ -92,4 +96,8 @@ small {
 .search-box {
   border-radius: 40px;
   border-color: #ecc121;
+}
+
+.code-link {
+  color: #ecc121;
 }
