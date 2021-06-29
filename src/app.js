@@ -58,12 +58,16 @@ function showTemperature(response) {
   dateElement.innerHTML = currentDate(response.data.dt * 1000);
   descriptionIconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/10d@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  descriptionIconElement.setAttribute(
+    "alt",
+    response.data.weather[0].description
   );
 }
 
 let apiKey = "ff39a1560b2a6b58581393d9865ab25f";
-let city = "London";
+let city = "Barcelona";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemperature).then(currentDate);
