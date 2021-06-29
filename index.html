@@ -18,27 +18,34 @@
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
-    <title>Weather app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Frinds Weather app</title>
   </head>
   <body>
     <div class="container">
-      <h1>Barcelona</h1>
-      <h2>Sunny</h2>
+      <h1 id="city"></h1>
+      <h2 id="description"></h2>
 
       <div class="row">
         <div class="col-4">
-          <div class="main-temp"><strong>25</strong>ºC</div>
+          <div class="main-temp"><strong id="temperature"></strong>ºC</div>
         </div>
         <div class="col-1 main-emoji">☀️</div>
       </div>
 
       <div class="min-max-temp">
-        🌡️ <strong>Min</strong> 22º | <strong>Max</strong> 27º
+        🌡️ <strong>Min</strong> <span id="min-temp"></span>º |
+        <strong>Max</strong> <span id="max-temp"></span>º
       </div>
 
       <div class="row extra-values">
-        <div class="col-5 humidity">💧<strong>Humidity</strong>: 40 %</div>
-        <div class="col-4 wind">🌬️<strong> Wind</strong>: 2 km/h</div>
+        <div class="col-5 humidity">
+          💧<strong>Humidity</strong>: <span id="humidityValue"></span> %
+        </div>
+        <div class="col-4 wind">
+          🌬️<strong> Wind</strong>: <span id="windSpeed"></span> km/h
+        </div>
       </div>
 
       <form class="form-inline">
