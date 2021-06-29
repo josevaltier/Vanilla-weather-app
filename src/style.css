@@ -30,12 +30,36 @@ li {
   background-repeat: no-repeat;
   max-width: 550px;
   margin-top: -5px;
-  padding: 141px;
+  padding: 161px;
 }
 
 .main-emoji {
-  font-size: 60px;
+  font-size: 50px;
   position: relative;
   top: -4px;
   left: 73px;
+}
+
+.main-temp strong {
+  font-size: 50px;
+  text-align: right;
+  font-weight: lighter;
+  margin-left: 25px;
+}
+
+.min-max-temp,
+.extra-values {
+  padding: 10px;
+}
+
+.wind {
+  position: relative;
+  top: -4px;
+  left: 44px;
+}
+
+.humidity {
+  position: relative;
+  top: -4px;
+  left: 27px;
 }
