@@ -34,6 +34,14 @@ small {
   position: relative;
   top: 17px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
 .container {
   max-width: 550px;
   margin-top: -5px;
@@ -53,7 +61,7 @@ small {
 }
 
 .main-temp strong {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: lighter;
 }
 
@@ -109,10 +117,6 @@ small {
   border-color: #ecc121;
 }
 
-.code-link {
-  color: #ecc121;
-}
-
 .duck {
   max-width: 250px;
   position: relative;
@@ -126,8 +130,25 @@ small {
   left: 326px;
 }
 
+.code-link {
+  color: #ecc121;
+}
 .coder-name {
   position: relative;
   top: -61px;
   left: 215px;
+}
+
+.main-temp .active {
+  cursor: default;
+  color: #212529;
+}
+
+.main-temp.active:hover {
+  text-decoration: none;
+}
+
+.unit {
+  color: #dbb014;
+  font-weight: lighter;
 }
