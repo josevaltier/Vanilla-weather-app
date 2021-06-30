@@ -109,3 +109,22 @@ small {
 .code-link {
   color: #ecc121;
 }
+
+.duck {
+  max-width: 250px;
+  position: relative;
+  top: -234px;
+  left: 529px;
+}
+
+.coder {
+  position: relative;
+  top: -216px;
+  left: 326px;
+}
+
+.coder-name {
+  position: relative;
+  top: -191px;
+  left: 215px;
+}
