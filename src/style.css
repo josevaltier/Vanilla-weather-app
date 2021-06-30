@@ -44,17 +44,16 @@ small {
   max-width: 120px;
   position: relative;
   top: -4px;
-  left: 73px;
+  left: 5px;
   padding: 0;
 }
 .main-temp {
   margin-top: 20px;
-  margin-left: 55px;
+  margin-left: 35px;
 }
 
 .main-temp strong {
   font-size: 50px;
-  text-align: center;
   font-weight: lighter;
 }
 
@@ -71,6 +70,9 @@ small {
   border-radius: 4px;
 }
 
+.extra-values {
+  margin-top: 5px;
+}
 .wind {
   position: relative;
   top: -4px;

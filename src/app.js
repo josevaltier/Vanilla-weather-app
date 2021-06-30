@@ -80,7 +80,7 @@ function searchSubmittedCity(event) {
   searchCity(cityInput.value);
 }
 
-searchCity("London");
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmittedCity);
+
+searchCity("London");
