@@ -5,6 +5,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: auto;
 }
 
 h1,
@@ -31,12 +32,12 @@ li {
 small {
   font-size: small;
   position: relative;
-  top: 8px;
+  top: 17px;
 }
 .container {
   max-width: 550px;
   margin-top: -5px;
-  padding: 130px;
+  padding: 130px 130px 0 130px;
 }
 
 .main-emoji {
@@ -113,18 +114,18 @@ small {
 .duck {
   max-width: 250px;
   position: relative;
-  top: -234px;
+  top: -104px;
   left: 529px;
 }
 
 .coder {
   position: relative;
-  top: -216px;
+  top: -85px;
   left: 326px;
 }
 
 .coder-name {
   position: relative;
-  top: -191px;
+  top: -61px;
   left: 215px;
 }
