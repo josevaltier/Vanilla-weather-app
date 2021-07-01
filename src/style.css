@@ -120,14 +120,21 @@ a:hover {
 .duck {
   max-width: 250px;
   position: relative;
-  top: -104px;
-  left: 529px;
+  top: -103px;
+  left: 568px;
+}
+
+.chick {
+  max-width: 100px;
+  position: relative;
+  top: -60px;
+  left: -599px;
 }
 
 .coder {
   position: relative;
   top: -85px;
-  left: 326px;
+  left: 362px;
 }
 
 .code-link {
@@ -136,7 +143,7 @@ a:hover {
 .coder-name {
   position: relative;
   top: -61px;
-  left: 215px;
+  left: 251px;
 }
 
 .main-temp .active {
