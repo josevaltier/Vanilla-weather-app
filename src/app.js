@@ -51,7 +51,6 @@ function showTemperature(response) {
   celsiusTemp = response.data.main.temp;
   celsiusMaxTemp = response.data.main.temp_max;
   celsiusMinTemp = response.data.main.temp_min;
-
   mainTemp.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -111,6 +110,17 @@ function showCelsiusTemperature(event) {
   minTempElement.innerHTML = Math.round(celsiusMinTemp);
 }
 
+function searchCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
+
+function searchLocation(position) {
+  let apiKey = "ff39a1560b2a6b58581393d9865ab25f";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
 let celsiusTemp = null;
 let celsiusMaxTemp = null;
 let celsiusMinTemp = null;
@@ -123,5 +133,8 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchSubmittedCity);
+
+let locateMeButton = document.querySelector("#locate-me-button");
+locateMeButton.addEventListener("click", searchCurrentLocation);
 
 searchCity("London");
