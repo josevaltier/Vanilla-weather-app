@@ -156,3 +156,13 @@ a:hover {
   color: #dbb014;
   font-weight: lighter;
 }
+
+.weather-forecast {
+  margin-top: 15px;
+  background-image: url("/images/Frame.png");
+}
+
+.forecast-temp {
+  font-size: 12px;
+  margin-left: 7px;
+}
