@@ -24,6 +24,22 @@
   </head>
   <body>
     <div class="container">
+      <form class="form-inline" id="search-form">
+        <input
+          type="text"
+          class="text search-box"
+          id="city-input"
+          placeholder=" I'm going to..."
+          autocomplete="on"
+        />
+        <input type="submit" value="Go!" class="go-button" />
+        <input
+          type="button"
+          value="📍"
+          class="locate-me-button"
+          id="locate-me-button"
+        />
+      </form>
       <h1>It's <span id="city"></span> baby!</h1>
       <h2 id="description"></h2>
 
@@ -46,29 +62,16 @@
 
       <div class="row extra-values">
         <div class="col-5 humidity">
-          💧<strong>Humidity</strong>: <span id="humidityValue"></span> %
+          💧<strong>Humidity</strong>:
+          <br />
+          <span id="humidityValue"></span> %
         </div>
-        <div class="col-4 wind">
-          🌬️<strong> Wind</strong>: <span id="windSpeed"></span> km/h
+        <div class="col-5 wind">
+          🌬️<strong> Wind</strong>: <br />
+          <span id="windSpeed"></span> km/h
         </div>
       </div>
 
-      <form class="form-inline" id="search-form">
-        <input
-          type="text"
-          class="text search-box"
-          id="city-input"
-          placeholder=" I'm going to..."
-          autocomplete="on"
-        />
-        <input type="submit" value="Go!" class="go-button" />
-        <input
-          type="button"
-          value="📍"
-          class="locate-me-button"
-          id="locate-me-button"
-        />
-      </form>
       <small>Last updated: <span id="date"></span></small>
     </div>
     <img src="src/images/whiteduck.png" alt="White duck" class="duck" />
