@@ -38,6 +38,30 @@ function currentDate(timestamp) {
   return `${day}, ${month} ${date} - ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+         <div class="forecast-date"><strong>${day}</strong></div>
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt=""
+          />
+          <div class="forecast-temp">
+          <span class="forecast-max"><strong>30º</strong></span> <span class="forecast-min">22º</span>
+          </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   let mainTemp = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -138,3 +162,4 @@ let locateMeButton = document.querySelector("#locate-me-button");
 locateMeButton.addEventListener("click", searchCurrentLocation);
 
 searchCity("London");
+displayForecast();
