@@ -84,7 +84,7 @@ a:hover {
 
 .humidity {
   position: relative;
-  top: 4px;
+  top: -4px;
   left: 27px;
   text-align: center;
   padding: 10px;
@@ -112,13 +112,13 @@ a:hover {
 .frame {
   max-width: 200px;
   position: relative;
-  top: -181px;
+  top: -193px;
   left: 291px;
 }
 
 .coder {
   position: relative;
-  top: -357px;
+  top: -368px;
   left: 393px;
   text-align: center;
 }
