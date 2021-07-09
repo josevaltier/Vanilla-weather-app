@@ -71,13 +71,11 @@ a:hover {
   border-radius: 4px;
 }
 
-.extra-values {
-  margin-top: 5px;
-}
 .wind {
   position: relative;
   top: -4px;
   left: 44px;
+  padding: 10px;
 }
 .wind:hover {
   background-color: rgba(236, 193, 33, 0.8);
@@ -86,9 +84,10 @@ a:hover {
 
 .humidity {
   position: relative;
-  top: -4px;
+  top: 4px;
   left: 27px;
   text-align: center;
+  padding: 10px;
 }
 
 .humidity:hover {
@@ -120,7 +119,7 @@ a:hover {
 .coder {
   position: relative;
   top: -357px;
-  left: 400px;
+  left: 393px;
   text-align: center;
 }
 
@@ -157,4 +156,10 @@ a:hover {
   top: -84px;
   left: 101px;
   color: #dbb014;
+}
+
+.forecast-icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 60px;
 }

@@ -62,9 +62,10 @@ function displayForecast(response) {
          )}</strong></div>
           <img
             src="http://openweathermap.org/img/wn/${
-              forecastDay.data.weather[0].icon
+              forecastDay.weather[0].icon
             }@2x.png";
             alt=""
+            class="forecast-icon"
           />
         
           <div class="forecast-temp">
@@ -192,4 +193,3 @@ let locateMeButton = document.querySelector("#locate-me-button");
 locateMeButton.addEventListener("click", searchCurrentLocation);
 
 searchCity("London");
-displayForecast();
